@@ -88,6 +88,9 @@ fos_user:
                                                         # but since there is no "login", as so it seems to be useless in
                                                         # our particular context, but still required by "FOSUserBundle"
     user_class: AppBundle\Entity\User
+    from_email:
+        address: symfonyAPI@symfonyAPI.com
+        sender_name: symfonyAPI
 
 # FOS OAuth Conf
 fos_oauth_server:
