@@ -30,6 +30,8 @@ framework:
     assets: ~
     php_errors:
         log: true
+    templating:
+        engines: ['twig']
 
 # Twig Configuration
 twig:
@@ -101,3 +103,14 @@ fos_oauth_server:
     auth_code_class:     AppBundle\Entity\AuthCode
     service:
         user_provider : fos_user.user_provider.username_email             # This property will be used when valid credentials are given to load the user upon access token creation
+
+# doctorine mongodb details
+doctrine_mongodb:
+    connections:
+        default:
+            server: "%mongodb_server%"
+            options: {}
+    default_database: test_database
+    document_managers:
+        default:
+            auto_mapping: true

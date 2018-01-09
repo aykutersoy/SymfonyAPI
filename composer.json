@@ -15,7 +15,10 @@
     },
     "require": {
         "php": ">=5.5.9",
+        "alcaeus/mongo-php-adapter": "^1.0",
         "doctrine/doctrine-bundle": "^1.6",
+        "doctrine/mongodb-odm": "^1.0",
+        "doctrine/mongodb-odm-bundle": "^3.1",
         "doctrine/orm": "^2.5",
         "friendsofsymfony/oauth-server-bundle": "^1.5",
         "friendsofsymfony/rest-bundle": "^2.3",
